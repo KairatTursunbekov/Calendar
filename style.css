@@ -1,0 +1,123 @@
+body{
+    margin: 0;
+}
+
+.hero{
+    width: 100%;
+    height: 815px;
+    background: linear-gradient(45deg, brown, rgb(25, 25, 182), rgb(146, 14, 14));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.calendar{
+    width: 300px;
+    height: 250px;
+    background-color: #fff;
+    border-radius: 10px;
+    border: 4px solid#1d0000;
+    display: flex;
+    text-align: center;
+    font-size: 28px;
+}
+.left .right{
+    flex-direction: column;
+}
+.left{
+    width: 58%;
+    background-color: brown;
+    border-radius: 6px 0px 0px 6px ;
+}
+.right{
+    width: 42%;
+    background-color: burlywood;
+    border-radius: 0px 6px 6px 0px ;
+}
+
+#date{
+    margin-bottom: 40px;
+    font-size: 60px;
+}
+
+#month{
+    margin-bottom: 40px;
+    font-size: 25px;
+    margin-top: 70px;
+}
+
+.time{
+    height: 250px;
+    width: 60px;
+    border: 3px solid;
+    border-radius: 10px 10px 10px 10px;
+    margin-left: 5px;
+    text-align: center;
+    /* box-shadow: 10px  0px 7px 0px rgb(27, 27, 26); */
+}
+.hour{
+    height: 20%;
+    margin-top: -15px;
+}
+.minute{
+    height: 20%;
+    margin-top: -12px;
+}
+.second{
+    height: 20%;
+}
+
+h6{
+    color: rgb(228, 181, 119);
+    font-weight: bold;
+}
+.one{
+    font-size: 15px;
+    color: rgb(228, 181, 119);
+    font-weight: bolder;
+}
+p{
+    font-size: 23px;
+}
+#hour{
+    margin-top: -34px;
+    font-size: 45px;
+    color: rgb(219, 68, 68);
+}
+.two{
+    font-size: 15px;
+    color: rgb(228, 181, 119);
+    font-weight: bolder;
+}
+#minute{
+    margin-top: -34px;
+    font-size: 45px;
+    color: rgb(219, 68, 68);
+}
+.three{
+    font-size: 15px;
+    color: rgb(228, 181, 119);
+    font-weight: bolder;
+}
+#second{
+    margin-top: -34px;
+    font-size: 45px;
+    color: rgb(219, 68, 68);
+}
+
+@media(max-width: 420px){
+    .calendar{
+        width: 200px;
+    }
+}
+@media(max-width: 300px){
+    .calendar{
+        width: 150px;
+    }
+    #day{
+        font-size: 18px;
+    }
+    #date{
+        font-size: 50px;
+    }
+}
